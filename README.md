@@ -1,1 +1,0 @@
-# typescript-notes-and-practice
