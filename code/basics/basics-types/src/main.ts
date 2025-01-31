@@ -20,3 +20,5 @@ let registrationNumber: string | number;
 const sum = (a: number, b: number): number => {
   return a + b;
 };
+
+

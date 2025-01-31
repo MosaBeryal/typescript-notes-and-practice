@@ -2,7 +2,13 @@
 let webDevelopment: string[] = ["js", "python", "expressjs", "fastAPI"];
 
 // Union Type Array (strings and numbers allowed)
-let devOps: (string | number)[] = ["cloud", "Containers", "CICD", "Pipelines", 100];
+let devOps: (string | number)[] = [
+  "cloud",
+  "Containers",
+  "CICD",
+  "Pipelines",
+  100,
+];
 
 // Mixed Data Array (different types)
 let mixedData: (number | boolean | string)[] = [1, true, "mosa"];
@@ -57,7 +63,7 @@ type Teacher = {
 const teacher: Teacher = {
   name: "mosa",
   assignedCourse: "Advance Web Development",
-  students: ["23", 3]
+  students: ["23", 3],
 };
 
 // Using `interface` for defining a user structure
@@ -70,12 +76,17 @@ interface User {
 const user: User = {
   username: "mosa",
   userId: 2312,
-  role: "admin"
+  role: "admin",
 };
 
 // Function to display user details
 const showUserDetails = (user: User) => {
   return `Hello ${user.username}!`; // Uses the `username` property from the User interface
-}
+};
 
 console.log(showUserDetails(user)); // Output: Hello mosa!
+
+// Type Literals
+let role: "Admin" | "User" | "Guest";
+
+role="Admin"

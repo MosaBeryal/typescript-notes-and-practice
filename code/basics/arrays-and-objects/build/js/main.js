@@ -2,7 +2,13 @@
 // String Array (only strings allowed)
 let webDevelopment = ["js", "python", "expressjs", "fastAPI"];
 // Union Type Array (strings and numbers allowed)
-let devOps = ["cloud", "Containers", "CICD", "Pipelines", 100];
+let devOps = [
+    "cloud",
+    "Containers",
+    "CICD",
+    "Pipelines",
+    100,
+];
 // Mixed Data Array (different types)
 let mixedData = [1, true, "mosa"];
 // This will cause an error because `webDevelopment` is an array of strings.
@@ -32,15 +38,18 @@ const studentObj = {
 const teacher = {
     name: "mosa",
     assignedCourse: "Advance Web Development",
-    students: ["23", 3]
+    students: ["23", 3],
 };
 const user = {
     username: "mosa",
     userId: 2312,
-    role: "admin"
+    role: "admin",
 };
 // Function to display user details
 const showUserDetails = (user) => {
     return `Hello ${user.username}!`; // Uses the `username` property from the User interface
 };
 console.log(showUserDetails(user)); // Output: Hello mosa!
+// Type Literals
+let role;
+role = "Admin";
